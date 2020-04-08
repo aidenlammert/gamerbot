@@ -1,5 +1,5 @@
 const Discord = require('discord.io');
-const auth = require('auth.json');
+const auth = require('./auth.json');
 const gamerbot = new Discord.Client();
 
 gamerbot.once('ready', () => {
