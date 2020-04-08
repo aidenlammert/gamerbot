@@ -1,7 +1,17 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const Discord = require('discord.io');
+const auth = require('auth.json');
+const gamerbot = new Discord.Client();
 
-client.once('ready', () => {
-    console.log('Bot ready');
+gamerbot.once('ready', () => {
+    console.log('Bot is ready');
 });
+
+client.login(auth.token);
+
+client.on('message', message => {
+    if(message.content === '!ping') {
+        message.channel.send('pong');
+    }
+});
+
 
