@@ -6,9 +6,9 @@ gamerbot.once('ready', () => {
     console.log('Bot is ready');
 });
 
-client.login(auth.token);
+gamerbot.login(auth.token);
 
-client.on('message', message => {
+gamerbot.on('message', message => {
     if(message.content === '!ping') {
         message.channel.send('pong');
     }
