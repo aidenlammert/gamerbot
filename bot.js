@@ -11,13 +11,14 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for(const file of commandFiles) {
-    const command = require('./commands/${file}');
+    const command = require(`./commands/${file}`);
 
     client.commands.set(command.name, command);
+    console.log(`storing command ${command.name}`);
 }
 
 client.once('ready', () => {
-    console.log('Bananas is ready');
+    console.log('\n---Bananas is ready---\n');
 });
 
 // Enter function when message is sent
@@ -29,6 +30,7 @@ client.on('message', message => {
     // command = lowercased args
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
+    console.log(`entered command ${command}`);
 
     if(!client.commands.has(command)) return;
 
