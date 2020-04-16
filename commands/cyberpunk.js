@@ -9,6 +9,6 @@ module.exports = {
         var difTime = cyberpunk.getTime() - today.getTime();
         var difDays = Math.floor(difTime / (1000 * 3600 * 24));
 
-        message.channel.send(`there are ${difDays} days until Cyberpunk 2077`);
+        message.channel.send(`There are ${difDays} days until Cyberpunk 2077`);
     }
 }
