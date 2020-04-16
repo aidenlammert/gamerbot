@@ -14,7 +14,7 @@ for(const file of commandFiles) {
     const command = require(`./commands/${file}`);
 
     client.commands.set(command.name, command);
-    console.log(`storing command ${command.name}`);
+    console.log(`Loading command ${command.name}`);
 }
 
 client.once('ready', () => {
@@ -24,11 +24,11 @@ client.once('ready', () => {
 // Enter function when message is sent
 client.on('message', message => {
     // message isn't a command
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
+    if(!message.content.startsWith("!") || message.author.bot) return;
 
     // args = everything after prefix
     // command = lowercased args
-    const args = message.content.slice(prefix.length).split(/ +/);
+    const args = message.content.slice(1).split(/ +/);
     const command = args.shift().toLowerCase();
     console.log(`entered command ${command}`);
 
