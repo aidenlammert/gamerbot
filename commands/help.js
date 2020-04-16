@@ -4,11 +4,15 @@ module.exports = {
 
     execute(message, args) {
         message.channel.send(`My commands are:\n
-        !ping - test connectivity\n
+        -- General --
+        !ping - test connectivity
         !help - list commands\n
-        !overwatch - add/remove Overwatch Player role\n
-        !paladins - add/remove Paladins Player role\n
-        !minecraft - add/remove Minecraft Player role\n
-        !valorant - add/remove Valorant Player role`);
+        -- Game Release Check --
+        !cyberpunk\n
+        -- Game Role add/remove
+        !overwatch
+        !paladins
+        !minecraft
+        !valorant`);
     }
 }
