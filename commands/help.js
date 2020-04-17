@@ -14,6 +14,7 @@ module.exports = {
         !overwatch
         !paladins
         !minecraft
-        !valorant`);
+        !valorant
+        !turnip`);
     }
 }
