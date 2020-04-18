@@ -21,6 +21,24 @@ client.once('ready', () => {
     console.log('\n---Bananas is ready---\n');
 });
 
+// Enter function when new member joins
+client.on('guildMemberAdd', member => {
+    const generalID = '430782897918574594';
+    const newUser = member.user.username;
+    const scrubRoleID = '671798002444402738';
+    
+    member.channel.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
+    Head over to #bot-command-line and use !help to show the commands you can use.`);
+
+    //client.channel.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
+    //Head over to #bot-command-line and use !help to show the commands you can use.`);
+    
+    //member.guild.channels.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
+    //Head over to #bot-command-line and use !help to show the commands you can use.`);
+
+    member.roles.add(scrubRoleID);
+});
+
 // Enter function when message is sent
 client.on('message', message => {
     // message isn't a command OR message is sent by a bot
