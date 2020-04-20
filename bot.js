@@ -26,15 +26,6 @@ client.on('guildMemberAdd', member => {
     const generalID = '430782897918574594';
     const newUser = member.user.username;
     const scrubRoleID = '671798002444402738';
-    
-    member.channel.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
-    Head over to #bot-command-line and use !help to show the commands you can use.`);
-
-    //client.channel.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
-    //Head over to #bot-command-line and use !help to show the commands you can use.`);
-    
-    //member.guild.channels.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUser}!
-    //Head over to #bot-command-line and use !help to show the commands you can use.`);
 
     member.roles.add(scrubRoleID);
 });
