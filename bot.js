@@ -35,6 +35,11 @@ client.on('message', message => {
     // message isn't a command OR message is sent by a bot
     if(!message.content.startsWith("!") || message.author.bot) return;
 
+    // 1/100 chance to react with sigmaFeet
+    if(Math.floor(Math.random() * 100) === 1) {
+        message.react('671809594745421840');
+    }
+
     // args = everything after prefix
     // command = lowercased args
     const args = message.content.slice(1).split(/ +/);
