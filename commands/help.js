@@ -8,11 +8,13 @@ module.exports = {
         !ping - test connectivity
         !help - list commands\n
         -- Game Release Check --
-        !cyberpunk\n
+        !cyberpunk
+        !xcom\n
         -- Game Role add/remove
         !overwatch
         !paladins
         !minecraft
-        !valorant`);
+        !valorant
+        !turnip`);
     }
 }
