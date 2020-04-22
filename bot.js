@@ -21,16 +21,19 @@ client.once('ready', () => {
     console.log('\n---Bananas is ready---\n');
 });
 
-// Enter function when new member joins
+// NEW MEMBER
 client.on('guildMemberAdd', member => {
     const generalID = '430782897918574594';
     const newUser = member.user.username;
     const scrubRoleID = '671798002444402738';
 
     member.roles.add(scrubRoleID);
+    
+    newUser.send(`Welcome to the Black Bear Gamers server! Please check !help in #bot-command-line to see what commands are available.\n
+    Please be aware that the game-specific roles are intended to be mentioned when people are looking for a game, so if you don't want to get pinged, don't give yourself those roles.`);
 });
 
-// Enter function when message is sent
+// NEW MESSAGE
 client.on('message', message => {
     // message isn't a command OR message is sent by a bot
     if(!message.content.startsWith("!") || message.author.bot) return;
