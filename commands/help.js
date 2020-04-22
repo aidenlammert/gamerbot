@@ -5,8 +5,9 @@ module.exports = {
     execute(message, args) {
         message.channel.send(`My commands are:\n
         -- General --
+        !help - list commands
         !ping - test connectivity
-        !help - list commands\n
+        !guest - mark yourself as an Honorary Black Bear
         -- Game Release Check --
         !cyberpunk
         !xcom\n
