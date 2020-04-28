@@ -18,5 +18,8 @@ module.exports = {
         else if(difDays === 0) {
             message.channel.send(`Cyberpunk 2077 released today.`);
         }
+        else if(difDays < 0) {
+            message.channel.send(`Cyberpunk 2077 is already released. Tell Aiden to delete this command.`);
+        }
     }
 }
