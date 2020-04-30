@@ -1,9 +1,9 @@
 module.exports = {
-    name: 'valorant',
+    name: 'transformice',
     description: 'Give user Transformice Player role',
     
     execute(message, args) {
-        const targID = '699812102600261722';
+        const targID = '699812102600242069';
         const targUser = message.member.user.username;
         
         // remove role if member already has it
