@@ -29,7 +29,7 @@ client.on('guildMemberAdd', member => {
 
     member.roles.add(scrubRoleID);
     
-    newUser.send(`Welcome to the Black Bear Gamers server! Please check !help in #bot-command-line to see what commands are available.\n
+    member.send(`Welcome to the Black Bear Gamers server! Please check !help in #bot-command-line to see what commands are available.\n
     Please be aware that the game-specific roles are intended to be mentioned when people are looking for a game, so if you don't want to get pinged, don't give yourself those roles.`);
 });
 
