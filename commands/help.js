@@ -7,6 +7,7 @@ module.exports = {
         -- General --
         !help - list commands
         !ping - test connectivity
+        !alumni - mark yourself as UMaine Alumni
         !guest - mark yourself as an Honorary Black Bear\n
         -- Game Release Check --
         !cyberpunk - Cyberpunk 2077
