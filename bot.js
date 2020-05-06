@@ -24,13 +24,25 @@ client.once('ready', () => {
 // NEW MEMBER
 client.on('guildMemberAdd', member => {
     const generalID = '430782897918574594';
-    const newUser = member.user.username;
+    const newUserName = member.user.username;
     const scrubRoleID = '671798002444402738';
+    //const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
+    let channel = client.channels.get(generalID);
 
     member.roles.add(scrubRoleID);
+
+    console.log(`New user added: ${newUserName}`);
+
+    try {
+        channel.send(`Welcome to the Black Bear Gamers server, ${newUserName}! Check !help in #bot-command-line to see what roles you can assign yourself.`);
+        //member.guild.channels.get(generalID).send(`Welcome to the Black Bear Gamers server, ${newUserName}! Check !help in #bot-command-line to see what roles you can assign yourself.`);
+    } catch(error) {
+        console.log(`New user greeting broke again...`);
+        console.error(error);
+    }
     
-    newUser.send(`Welcome to the Black Bear Gamers server! Please check !help in #bot-command-line to see what commands are available.\n
-    Please be aware that the game-specific roles are intended to be mentioned when people are looking for a game, so if you don't want to get pinged, don't give yourself those roles.`);
+    //client.users.get(member.id).send(`Welcome to the Black Bear Gamers server! Please check !help in #bot-command-line to see what commands are available.\n
+    //Please be aware that the game-specific roles are intended to be mentioned when people are looking for a game, so if you don't want to get pinged, don't give yourself those roles.`);
 });
 
 // NEW MESSAGE
