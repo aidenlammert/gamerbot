@@ -17,6 +17,7 @@ module.exports = {
         !paladins
         !minecraft
         !valorant
-        !turnip`);
+        !turnip
+        !cod`);
     }
 }
