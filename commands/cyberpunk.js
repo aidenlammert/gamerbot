@@ -3,7 +3,7 @@ module.exports = {
     description: 'Check how many days until Cyberpunk 2077 releases',
 
     execute(message, args) {
-        var gameDate = new Date("09/17/2020");
+        var gameDate = new Date("11/19/2020");
         var today = new Date();
 
         var difTime = gameDate.getTime() - today.getTime();
