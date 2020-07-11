@@ -1,24 +1,24 @@
 module.exports = {
-    name: 'overwatch',
-    description: 'Give user Overwatch Player role',
+    name: 'paladins',
+    description: 'Give user Paladins Player role',
     
     execute(message, args) {
-        const targID = '696876323049701497';
+        const targID = '696876982314729573';
         const targUser = message.member.user.username;
         
         // remove role if member already has it
         if(message.member.roles.cache.has(targID)) {
-            console.log(`Removing role Overwatch Player from ${targUser}`);
+            console.log(`Removing role Paladins Player from ${targUser}`);
             message.member.roles.remove(targID);
 
-            message.reply(`removed role Overwatch Player`);
+            message.reply(`removed role Paladins Player`);
         }
         // add role if member doesn't have it already
         else {
-            console.log(`Adding role Overwatch Player to ${targUser}`);
+            console.log(`Adding role Paladins Player to ${targUser}`);
             message.member.roles.add(targID);
 
-            message.reply(`added role Overwatch Player`);
+            message.reply(`added role Paladins Player`);
         }
     },
 };
