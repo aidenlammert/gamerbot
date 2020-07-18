@@ -17,6 +17,8 @@ module.exports = {
         !minecraft
         !valorant
         !turnip
-        !cod`);
+        !cod
+        !dnd
+        !ror`);
     }
 }
