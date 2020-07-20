@@ -3,7 +3,7 @@ module.exports = {
     description: 'Give user Risk of Rain Player role',
     
     execute(message, args) {
-        const targID = '734073847946412043';
+        const targID = '734074529902755948';
         const targUser = message.member.user.username;
         
         // remove role if member already has it
