@@ -19,6 +19,7 @@ module.exports = {
         !turnip
         !cod
         !dnd
-        !ror`);
+        !ror
+        !hyperscape`);
     }
 }
