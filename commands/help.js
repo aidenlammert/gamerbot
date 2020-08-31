@@ -20,6 +20,7 @@ module.exports = {
         !cod
         !dnd
         !ror
-        !hyperscape`);
+        !hyperscape
+        !gtfo`);
     }
 }
