@@ -3,7 +3,7 @@ module.exports = {
     description: 'Give user Among Us Player role',
     
     execute(message, args) {
-        const targID = '751768204497387530';
+        const targID = '751698409043525642';
         const targUser = message.member.user.username;
         
         // remove role if member already has it
