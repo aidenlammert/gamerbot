@@ -21,6 +21,7 @@ module.exports = {
         !dnd
         !ror
         !hyperscape
-        !gtfo`);
+        !gtfo
+        !amongus`);
     }
 }
