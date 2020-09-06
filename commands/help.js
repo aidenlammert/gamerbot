@@ -22,6 +22,7 @@ module.exports = {
         !ror
         !hyperscape
         !gtfo
-        !amongus`);
+        !amongus
+        !wow`);
     }
 }
