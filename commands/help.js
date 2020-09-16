@@ -10,14 +10,19 @@ module.exports = {
         !alumni - mark yourself as UMaine Alumni
         !guest - mark yourself as an Honorary Black Bear\n
         -- Game Release Check --
-        !cyberpunk - Cyberpunk 2077
-        !lou - Last of Us 2\n
+        !cyberpunk - Cyberpunk 2077\n
         -- Game Role add/remove --
         !overwatch
         !paladins
         !minecraft
         !valorant
         !turnip
-        !cod`);
+        !cod
+        !dnd
+        !ror
+        !hyperscape
+        !gtfo
+        !amongus
+        !wow`);
     }
 }
