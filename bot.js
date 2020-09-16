@@ -32,6 +32,7 @@ client.on('guildMemberAdd', member => {
     let cmdChannel = client.channels.cache.get(cmdChannelID);
 
     const newUserName = member.user.username;
+    const newUserID = member.user.id;
     const scrubRoleID = '671798002444402738';
     
     member.roles.add(scrubRoleID);
@@ -39,7 +40,11 @@ client.on('guildMemberAdd', member => {
     console.log(`New user added: ${newUserName}`);
 
     try {
-        channel.send(`Welcome to the Black Bear Gamers server, ${newUserName}! Check !help in ${cmdChannel} to see what roles you can assign yourself.`);
+        channel.send(`Welcome to the Black Bear Gamers, ${newUserName}! Check !help in ${cmdChannel} to see what roles you can assign yourself.`);
+        client.users.get(newUserID).send(`Thanks for joining the Black Bear Gamers! We're happy to have you here.\n
+        If you aren't a UMaine student, please use the command !guest in the #bot-command-line channel. If you used to be a UMaine student, please use the command !alumni in the same place.\n
+        If you want to get a ping when people are looking for a group, we've got a bunch of roles available. Enter !help here or in #bot-command-line to see your options. Entering a command a second time will remove the role.\n
+        We aren't an official UMaine server, but please keep things reasonably safe for work.`)
     } catch(error) {
         console.log(`New user greeting broke again...`);
         console.error(error);
