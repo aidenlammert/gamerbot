@@ -33,8 +33,8 @@ client.on('guildMemberAdd', member => {
 
     const newUserName = member.user.username;
     const newUserID = member.user.id;
-    let newUser = client.users.get(newUserID);
-    
+    let newUser = client.user.get(newUserID);
+
     console.log(`New user ID: ${newUserID}`);
     const scrubRoleID = '671798002444402738';
     
