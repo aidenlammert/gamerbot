@@ -42,7 +42,7 @@ client.on('guildMemberAdd', member => {
 
     try {
         //channel.send(`Welcome to the Black Bear Gamers, ${newUserName}!`);
-        client.users.get(newUserID).send(`Thanks for joining the Black Bear Gamers! We're happy to have you here.\n
+        client.users.get(newUserID).sendMessage(`Thanks for joining the Black Bear Gamers! We're happy to have you here.\n
         If you aren't a UMaine student, please use the command !guest in the #bot-command-line channel. If you used to be a UMaine student, please use the command !alumni in the same place.\n
         If you want to get a ping when people are looking for a group, we've got a bunch of roles available. Enter !help here or in #bot-command-line to see your options. Entering a command a second time will remove the role.\n
         We aren't an official UMaine server, but please keep things reasonably safe for work.`);
