@@ -32,7 +32,7 @@ client.on('guildMemberAdd', member => {
     let cmdChannel = client.channels.cache.get(cmdChannelID);
 
     const newUserName = member.user.username;
-    const newUserID = member.user.get('<id>');
+    const newUserID = member.user.id;
     console.log(`New user ID: ${newUserID}`);
     const scrubRoleID = '671798002444402738';
     
