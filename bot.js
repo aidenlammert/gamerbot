@@ -42,11 +42,11 @@ client.on('guildMemberAdd', member => {
     console.log(`New user added: ${newUserName}`);
 
     try {
-        //channel.send(`Welcome to the Black Bear Gamers, ${newUserName}!`);
+        channel.send(`Welcome to the Black Bear Gamers, ${newUserName}!`);
         member.user.send(`Thanks for joining the Black Bear Gamers! We're happy to have you here.\n
 If you aren't a UMaine student, please use the command !guest in the #bot-command-line channel. If you used to be a UMaine student, please use the command !alumni in the same place.
 If you want to get a ping when people are looking for a group, we've got a bunch of roles available. Enter !help here or in #bot-command-line to see your options. Entering a command a second time will remove the role.
-We aren't an official UMaine server, but please keep things reasonably safe for work.`);
+We aren't an official UMaine server, but please keep things reasonably safe for work. If somebody isn't following the rules, feel free to ping Aiden. Please remember that he's just one guy and can't get to everything immediately.`);
     } catch(error) {
         console.log(`New user greeting broke again...`);
         console.error(error);
