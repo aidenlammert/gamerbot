@@ -10,7 +10,8 @@ module.exports = {
 !alumni - mark yourself as UMaine Alumni
 !guest - mark yourself as an Honorary Black Bear\n
 -- Game Release Check --
-!cyberpunk - Cyberpunk 2077\n
+!deathloop
+!ratchetclank
 -- Game Role add/remove --
 !overwatch
 !paladins
@@ -23,6 +24,7 @@ module.exports = {
 !hyperscape
 !gtfo
 !amongus
-!wow`);
+!wow
+!apex`);
     }
 }
