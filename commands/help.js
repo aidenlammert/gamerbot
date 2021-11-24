@@ -10,8 +10,12 @@ module.exports = {
 !alumni - mark yourself as UMaine Alumni
 !guest - mark yourself as an Honorary Black Bear\n
 -- Game Release Check --
-!deathloop
-!ratchetclank
+(none active currently)\n
+-- Hardware Selectors --
+!pc
+!xbox
+!ps
+!switch\n
 -- Game Role add/remove --
 !overwatch
 !paladins
@@ -21,10 +25,9 @@ module.exports = {
 !cod
 !dnd
 !ror
-!hyperscape
-!gtfo
 !amongus
 !wow
-!apex`);
+!apex
+!halo`);
     }
 }
